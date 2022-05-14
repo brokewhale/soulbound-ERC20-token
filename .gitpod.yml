@@ -1,4 +1,5 @@
 tasks:
   - name: ⚒️ FOUNDRY ⚒️
+    before: code -r src/EXP.sol  && code -r test/EXP.t.sol
     init: curl -L https://foundry.paradigm.xyz | bash && source /home/gitpod/.bashrc && foundryup
     command: forge test
