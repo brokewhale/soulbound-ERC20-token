@@ -1,6 +1,4 @@
 tasks:
-  - name: Foundry
-    init: curl -L https://foundry.paradigm.xyz | bash && source /home/gitpod/.bashrc
-    command: foundryup
-  - name: Test
+  - name: ⚒️ FOUNDRY ⚒️
+    init: curl -L https://foundry.paradigm.xyz | bash && source /home/gitpod/.bashrc && foundryup
     command: forge test
