@@ -1,4 +1,4 @@
 tasks:
-  - before: curl -L https://foundry.paradigm.xyz | bash
   - name: Foundry
-    init: source /home/gitpod/.bashrc && foundry
+    before: curl -L https://foundry.paradigm.xyz | bash && source /home/gitpod/.bashrc
+    init: foundry
